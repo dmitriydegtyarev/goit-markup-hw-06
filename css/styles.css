@@ -111,6 +111,7 @@ img {
 
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
   background-color: var(--main-background-color);
 
   /* transition-property: transform;
@@ -134,6 +135,45 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.modal .title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.input {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.input-area {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
 /* ===== END MODAL WINDOW ===== */
 
 /* ===== COMPONENTS ===== */
@@ -155,7 +195,7 @@ img {
   color: #000000;
 }
 
-.button-hero {
+.button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -164,7 +204,6 @@ img {
   line-height: 1.875;
   letter-spacing: 0.06em;
   padding: 10px 32px;
-  text-decoration: none;
   border-radius: 4px;
   border: none;
   color: var(--main-background-color);
@@ -664,14 +703,7 @@ img {
   width: 200px;
   display: inline-flex;
   align-items: center;
-  background-color: var(--accent-color);
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
   padding: 10px 26px;
-  border-radius: 4px;
-  border: none;
-  color: var(--main-background-color);
 }
 
 .footer .button::after {

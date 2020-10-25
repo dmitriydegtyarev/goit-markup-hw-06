@@ -58,7 +58,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button button-hero" type="button" data-modal-open>Заказать услугу</button>
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- About us -->
@@ -412,6 +412,37 @@
   <!-- Modal window -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <form action="#">
+        <h2 class="title">
+          <b>Оставьте свои данные, мы вам перезвоним</b>
+        </h2>
+        <ul class="list">
+          <li class="item">
+            <label class="label">Имя
+              <input class="input" type="text">
+            </label>
+          </li>
+          <li class="item">
+            <label class="label">Телефон
+              <input class="input" type="text">
+            </label>
+          </li>
+          <li class="item">
+            <label class="label">Почта
+              <input class="input" type="text">
+            </label>
+          </li>
+          <li class="item">
+            <label class="label">Комментарий
+              <textarea class="input input-area" name="" id="" placeholder="Введите текст"></textarea>
+            </label>
+          </li>
+        </ul>
+        <label>Соглашаюсь с рассылкой и принимаю <span><a class="link" href="">Условия договора</a></span>
+          <input type="checkbox" class="visually-hidden">
+        </label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
       <button class="close-button" type="button" data-modal-close></button>
     </div>
   </div>
