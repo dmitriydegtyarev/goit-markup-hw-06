@@ -163,6 +163,7 @@ img {
 }
 
 .input:not(:last-child) {
+  padding: 11px 12px;
   margin-bottom: 10px;
 }
 
