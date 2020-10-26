@@ -419,31 +419,48 @@
         <ul class="list">
           <li class="item">
             <label class="label">Имя
-              <input class="input" type="text">
+              <input class="input" type="text" name="user-name">
+              <svg class="form-svg">
+                <use href="./images/sprite.svg#name"></use>
+              </svg>
             </label>
           </li>
           <li class="item">
             <label class="label">Телефон
-              <input class="input" type="text">
+              <input class="input" type="tel" name="tel">
+              <svg class="form-svg">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
             </label>
           </li>
           <li class="item">
             <label class="label">Почта
-              <input class="input" type="text">
+              <input class="input" type="email" name="email">
+              <svg class="form-svg">
+                <use href="./images/sprite.svg#email"></use>
+              </svg>
             </label>
           </li>
           <li class="item">
             <label class="label">Комментарий
-              <textarea class="input input-area" name="" id="" placeholder="Введите текст"></textarea>
+              <textarea class="input input-area" name="coment" placeholder="Введите текст"></textarea>
             </label>
           </li>
         </ul>
-        <label>Соглашаюсь с рассылкой и принимаю <span><a class="link" href="">Условия договора</a></span>
-          <input type="checkbox" class="visually-hidden">
-        </label>
+        <div class="wrap">
+          <span class="checkbox"></span>
+          <label class="label-policy">Соглашаюсь с рассылкой и принимаю <span><a class="policy" href="">Условия
+                договора</a></span>
+            <input type="checkbox" class="visually-hidden">
+          </label>
+        </div>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="close-button" type="button" data-modal-close></button>
+      <button class="close-button" type="button" data-modal-close>
+        <svg class="close-modal-svg">
+          <use href="./images/sprite.svg#close-modal-window"></use>
+        </svg>
+      </button>
     </div>
   </div>
   <!-- End modal window -->
