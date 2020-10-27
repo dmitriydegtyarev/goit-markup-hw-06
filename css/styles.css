@@ -227,11 +227,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .wrap {
-  display: flex;
-  align-items: center;
-} */
-
 .checkbox {
   display: inline-flex;
   content: "";
@@ -239,10 +234,13 @@ img {
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
+  margin-right: 8px;
+  transition: background-color 250ms var(--main-animation), border-color 250ms var(--main-animation),
+    outline 250ms var(--main-animation);
 }
 
 .checkbox-hidden:focus + .checkbox {
-  outline: 4px solid #2196f3;
+  outline: 2px solid #2196f3;
   border: none;
 }
 
